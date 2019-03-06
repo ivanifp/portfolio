@@ -14,6 +14,7 @@ html{
     padding: 0;
     margin: 0;
     overflow-y: scroll;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -68,12 +69,40 @@ nav ul li:hover{
     width: 100%;
 }
 
+.full100{
+    width: 100%;
+}
+
 #infoCenter{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
     font-size: 4em;
+    background-color: rgba(247, 246, 246, 0.5);
+}
+
+#infoCenter a:hover{
+    color:#C7D5F9;
+}
+
+#projectsCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.projets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 2%;
+    margin: 2% 2% 2% 0;  
+    background-color: #F7F6F6;
+    border: solid 1px white;
+    border-radius: 1%;
 }
 
 #footer{

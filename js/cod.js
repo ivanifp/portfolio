@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $('#info').click(function(){
         $.ajax({url: "html/info.html", success: function(result){
-            $("#center").html(result);
+            $("#center").show(3000).html(result);
           }});
     });
 
