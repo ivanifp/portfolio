@@ -129,15 +129,6 @@ nav ul li{
     color: black;
 }
 
-#centroIndex h2{
-    animation: escribir 5s steps(30) infinite alternate;
-}
-
-@keyframes escribir{
-    from{width: 100%}
-    to{width: 0}
-}
-
 #projectsCenter{
     display: flex;
     flex-direction: row;
