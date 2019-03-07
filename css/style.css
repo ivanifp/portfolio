@@ -42,6 +42,7 @@ a, a:link, a:visited, a:active{
 }
 
 nav{
+    display: none;
     width: 100%;
 }
 

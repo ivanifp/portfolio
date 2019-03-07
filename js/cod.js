@@ -12,14 +12,16 @@ $(document).ready(function () {
   });
 
   $.ajax({url: "html/central.html", success: function(result){
-      maquina("center",result,200,0);
+      maquina("center",result,90,1);
     }});    
+
+  $('nav').show(6000);
 
   $('.home').click(function(){
     $('body').removeClass('white');
 
     $.ajax({url: "html/central.html", success: function(result){
-      maquina("center",result,200,0);
+      maquina("center",result,90,1);
       }});
   });
 
