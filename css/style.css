@@ -3,6 +3,11 @@
 *, *:before, *:after{
 	box-sizing: border-box;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html{
     background: url(../img/stil-734851-unsplash.jpg) no-repeat center center fixed;
@@ -15,6 +20,7 @@ html{
     margin: 0;
     overflow-y: scroll;
     font-family: 'Roboto', sans-serif;
+    min-width: 300px;
 }
 
 body{
@@ -45,8 +51,9 @@ nav ul{
     list-style: none;
 }
 
-nav:hover{
+.navGrey{
     background-color: rgba(14, 6, 6, 50%); 
+    font-size: 1.1em;
 }
 
 nav ul li{
@@ -56,7 +63,29 @@ nav ul li{
 }
 
 nav ul li:hover{
-    color: aliceblue; 
+    color: aliceblue;
+    -o-transition:1.5s;
+    -ms-transition:1.5s;
+    -moz-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s; 
+}
+
+nav ul li{
+    -o-transition:1.5s;
+    -ms-transition:1.5s;
+    -moz-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s;
+    color: black;
+}
+
+#nav2{
+    display: none;
+}
+
+#nav3{
+    display: none;
 }
 
 #center{
@@ -78,12 +107,26 @@ nav ul li:hover{
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-    font-size: 4em;
-    background-color: rgba(247, 246, 246, 0.5);
+    font-size: 3em;
+    
 }
 
-#infoCenter a:hover{
-    color:#C7D5F9;
+#infoCenter a:hover, .projets a:hover{
+    color:#87898A;
+    -o-transition:1.5s;
+    -ms-transition:1.5s;
+    -moz-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s;
+}
+
+#infoCenter a:hover, .projets a:hover{
+    -o-transition:1.5s;
+    -ms-transition:1.5s;
+    -moz-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s;
+    color: black;
 }
 
 #projectsCenter{
@@ -91,6 +134,7 @@ nav ul li:hover{
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
+    justify-content: center;
 }
 
 .projets{
@@ -110,6 +154,7 @@ nav ul li:hover{
     flex-direction: row;
     align-content: space-around;
     align-self: flex-end;
+    flex-wrap: wrap;
     background-color: rgba(84, 84, 84,100%); 
     width: 100%;
 }
@@ -124,8 +169,65 @@ nav ul li:hover{
 
 .foot a:hover{
     color: aliceblue;
+    -o-transition:1.5s;
+    -ms-transition:1.5s;
+    -moz-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s;
+}
+
+.foot a{
+    -o-transition:1.5s;
+    -ms-transition:1.5s;
+    -moz-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s;
+    color: black;
 }
 
 .foot span{
     margin-left: 2%;
+}
+
+.filter{
+    background-color: rgba(247, 246, 246, 0.5);
+    filter: grayscale(100%);
+}
+
+.white{
+    background-color: rgba(247, 246, 246, 0.5);
+}
+
+@media screen and (max-width: 1024px){
+
+    .projets{
+        width: 45%;
+    }
+
+    #infoCenter{
+        font-size: 2.5em;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .projets{
+        width: 90%;
+    }
+
+    #nav1{display: none;}
+    #nav2{
+        margin-left: 4%;
+        display: unset; 
+    }
+
+    #infoCenter{
+        font-size: 2em;
+    }
+
+    .foot{
+        width: 100%;
+    }
+
 }
