@@ -40,7 +40,7 @@ $(document).ready(function () {
       }});
 
   });
-
+  //https://es.stackoverflow.com/questions/61215/realizar-efecto-m%C3%A1quina-de-escribir-con-pausa
   function maquina(contenedor,texto,intervalo,n){
     var i=0,
      // Creamos el timer
